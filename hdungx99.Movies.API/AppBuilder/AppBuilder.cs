@@ -11,7 +11,7 @@
             }
 
             builder.UseHttpsRedirection();
-
+            builder.UseAuthentication();
             builder.UseAuthorization();
         }
     }

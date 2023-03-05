@@ -1,3 +1,4 @@
+using hdungx99.Core.Auth.AuthRegister;
 using hdungx99.Movies.API;
 
 var builder = WebApplication.CreateBuilder(args);
