@@ -9,18 +9,32 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="12.0.0" />
     <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="7.0.3" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="7.0.3">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="7.0.3" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="7.0.3">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
     <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.17.2" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0" />
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Controllers\" />
+    <ProjectReference Include="..\hdungx99.Movies.BLL\hdungx99.Movies.BLL.csproj" />
+    <ProjectReference Include="..\hdungx99.Movies.DAL\hdungx99.Movies.DAL.csproj" />
   </ItemGroup>
 
   <ItemGroup>
     <Reference Include="hdungx99.Core.Auth">
       <HintPath>..\..\hdungx99.Core\hdungx99.Core.Auth\bin\Debug\net7.0\hdungx99.Core.Auth.dll</HintPath>
+    </Reference>
+    <Reference Include="hdungx99.Core.EF">
+      <HintPath>..\..\hdungx99.Core\hdungx99.Core.EF\bin\Debug\net7.0\hdungx99.Core.EF.dll</HintPath>
     </Reference>
   </ItemGroup>
 

@@ -6,4 +6,18 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="12.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\hdungx99.Movies.DAL\hdungx99.Movies.DAL.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="hdungx99.Core.EF">
+      <HintPath>..\..\hdungx99.Core\hdungx99.Core.EF\bin\Debug\net7.0\hdungx99.Core.EF.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
 </Project>

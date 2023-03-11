@@ -1,6 +1,14 @@
-﻿namespace hdungx99.Movies.DAL.Context
+﻿
+using hdungx99.Movies.DAL.Entity;
+using Microsoft.EntityFrameworkCore;
+
+namespace hdungx99.Movies.DAL.Context
 {
-    internal class MoviesContext
+    public class MoviesContext : DbContext
     {
+        public MoviesContext(DbContextOptions<MoviesContext> options) : base(options)
+        {
+        }
+        public DbSet<Category> Categories { get; set; }
     }
 }
